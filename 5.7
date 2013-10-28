@@ -1,0 +1,22 @@
+#include<iostream.h>
+
+int factorial(int);
+
+int main()
+{
+        int m,n;
+        cout<<"请输入m的值："<<endl;
+        cin>>m;
+        cout<<"请输入n的值"<<endl;
+        cin>>n;
+        cout<<factorial(m)/(factorial(m-n)*factorial(n))<<endl;
+        return 0;
+}
+
+int factorial(int n)
+{
+        if(n==1)
+                return 1;
+        else
+                return n*factorial(n-1);
+}
